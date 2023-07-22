@@ -15,5 +15,5 @@
 }
 
 .cicle:hover {
-    transform: translate(20px, -20px);
+    transform: translate(-20px, 20px);
 }
