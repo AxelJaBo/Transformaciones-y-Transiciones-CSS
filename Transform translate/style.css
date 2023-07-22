@@ -1,0 +1,19 @@
+.shadow {
+    background: lightgray;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.cicle {
+    background: #3A1C71;
+    background: -webkit-linear-gradient(to right, #FFAF7B, #D76D77, #3A1C71);
+    background: linear-gradient(to right, #FFAF7B, #D76D77, #3A1C71);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.cicle:hover {
+    transform: translate(20px, -20px);
+}
