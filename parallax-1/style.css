@@ -1,27 +1,69 @@
-.card {
-    width: 200px;
-    height: 200px;
-    transform-style: preserve-3d;
+body {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.parallax-container {
+    width: 100%;
+    height: 100vh;
+    perspective: 8px;
+    overflow-x: hidden;
+    overflow-y: scroll;
     position: relative;
 }
 
-.card:hover{
-    transform: rotateX(180deg);
+.image {
+    position: absolute;
 }
 
-.face{
-    border-radius: 20px;
+
+.image_background {
+    width: 100%;
+    height: auto;
+    transform: translateZ(0px) scale(1);
+    transform-origin: 0 50%;
+}
+
+.image_middle {
     width: 100%;
     height: 100%;
+    transform: translateZ(5px) scale(0.375);
+    transform-origin: 50%;
+}
+
+.image_foreground {
+    width: 100%;
+    height: auto;
+    transform: translateZ(2px) scale(0.75);
+    transform-origin: top;
+}
+
+.card {
+    background: white;
+    border-radius: 8px;
+    width: 80px;
+    height: 100px;
     position: absolute;
-    backface-visibility: hidden;
+    transform: rotate(-20deg);
 }
 
-.face.front {
-    background: pink;
+/* Agrega tus propios valores */
+
+.one {
+    left: 30%;
 }
 
-.face.back {
-    background:papayawhip;
-    transform: rotateX(180deg);
+.two {
+    right: 20%;
+    top: 200px;
+
+}
+
+.three {
+    right: 20%;
+    bottom: -700px;
 }
